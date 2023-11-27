@@ -1,0 +1,85 @@
+/* custom properties */
+:root {
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Neon-Green-hover: hsl(150, 88%, 61%);
+    --Light-Cyan: hsl(193, 38%, 86%);
+
+    --font-family: 'Manrope', sans-serif;
+}
+
+/* global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* general styles */
+body {
+    font-family: var(--font-family);
+    min-height: 100dvh;
+    background-color: var(--Dark-Blue);
+    display: grid;
+    place-content: center;
+    line-height: 1.5;
+}
+
+.content {
+    max-width: 400px;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 1rem;
+    margin-inline: 10px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+.content .id-number {
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.content .text {
+    color: var(--Light-Cyan);
+    font-weight: 800;
+}
+
+.content > picture {
+    margin-inline: auto;
+}
+
+.content .btn {
+    cursor: pointer;
+    border: 0;
+    align-self: center;
+    padding: 1rem;
+    margin-bottom: -2.5rem;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+    transition: box-shadow 0.3s;
+}
+
+.content .btn:hover {
+    box-shadow: 0 0 20px var(--Neon-Green);
+}
